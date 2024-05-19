@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="#DDE5F1"
+    android:paddingRight="16dip"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/profiletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dip"
+        android:text="PROFILE"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/profiletext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dip"
+        app:srcCompat="@drawable/aku" />
+
+    <TextView
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:text="@string/step1"
+        android:textAlignment="center"
+        android:textColor="#013462"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="@string/step2"
+        android:textAlignment="center"
+        android:textColor="#013462"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:text="@string/step3"
+        android:textAlignment="center"
+        android:textColor="#013462"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dip"
+        android:text="@string/copyright"
+        android:textAlignment="center"
+        android:textColor="#013462"
+        android:textSize="15sp" />
+
+</RelativeLayout>

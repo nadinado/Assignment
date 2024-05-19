@@ -1,0 +1,6 @@
+<!-- res/drawable/rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    android:shape="rectangle">
+    <corners android:radius="30dp" /> <!-- Adjust the radius to change the amount of curvature -->
+    <solid android:color="#F44336" />
+</shape>

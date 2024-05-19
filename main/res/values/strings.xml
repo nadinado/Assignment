@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Nado PowerBill</string>
+
+    <string name="electricity_output">Bill: RM %s</string>
+    <string name="rebate_output">Rebate: RM %s</string>
+    <string name="final_cost_output">Final Cost: RM %s</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <string name="programcode">ICT602</string>
+    <string name="copyright"> Copyright &#169; 2024 Nadi. All Rights Reserved</string>
+    <string name="summary"> A Simple Calculation Generator for Your Electric Bills in Malaysia</string>
+
+    <string name="step1"> Nadiatul Ain Syafiqah Binti Ahmad Taufik</string>
+    <string name="step2"> 2022755357</string>
+    <string name="step3"> RCS2405B</string>
+</resources>

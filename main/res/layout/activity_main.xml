@@ -1,0 +1,142 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDE5F1"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/nado_calc"/>
+
+
+    <!-- Input Fields and Buttons Container -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView5"
+        android:background="@drawable/text_view"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Electricity Unit Input -->
+        <EditText
+            android:id="@+id/numberElectricity"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Electricity Unit (kWh)"
+            android:inputType="numberDecimal" />
+
+        <!-- Rebate Input -->
+        <EditText
+            android:id="@+id/rebate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Rebate (0% - 5%)"
+            android:inputType="numberDecimal" />
+
+        <!-- Buttons Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Clear Button -->
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#F44336"
+                android:text="Clear"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/btnCalaculate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#03A9F4"
+                android:text="Calculate"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Total Bill Text -->
+    <LinearLayout
+        android:id="@+id/outputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/text_view">
+
+        <!-- Total Bill Text -->
+        <TextView
+            android:id="@+id/electricityOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Bill: RM 0.00"
+            android:textColor="#013462"
+            android:textSize="20sp" />
+
+        <!-- Rebate Output -->
+        <TextView
+            android:id="@+id/rebateOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebate: 0%"
+            android:textAlignment="center"
+            android:textColor="#013462"
+            android:textSize="20sp" />
+
+        <!-- Final Cost Output -->
+        <TextView
+            android:id="@+id/finalCostOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Cost: RM 0.00"
+            android:textAlignment="center"
+            android:textColor="#013462"
+            android:textSize="28sp"/>
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dip"
+        android:text="@string/copyright"
+        android:textAlignment="center"
+        android:textColor="#013462"
+        android:textSize="15sp" />
+
+</RelativeLayout>
